@@ -1,13 +1,11 @@
-package com.qanstar.boysfrontline.Armor;
+package com.qanstar.boysfrontline.item.Armor.BlackArmor;
 
-import com.qanstar.boysfrontline.RegisterItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Lazy;
 
 public class BlackArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] {400, 400, 400, 400};

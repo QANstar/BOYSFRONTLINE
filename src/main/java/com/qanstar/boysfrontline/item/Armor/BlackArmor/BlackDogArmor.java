@@ -1,4 +1,4 @@
-package com.qanstar.boysfrontline.Armor;
+package com.qanstar.boysfrontline.item.Armor.BlackArmor;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
@@ -6,9 +6,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
