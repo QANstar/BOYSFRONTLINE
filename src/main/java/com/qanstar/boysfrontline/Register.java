@@ -1,5 +1,5 @@
 package com.qanstar.boysfrontline;
-import com.qanstar.boysfrontline.Block.BlockRegister;
+import com.qanstar.boysfrontline.block.BlockRegister;
 import com.qanstar.boysfrontline.item.ItemRegister;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
