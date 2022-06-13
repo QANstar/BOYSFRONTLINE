@@ -5,10 +5,13 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,25 +26,23 @@ public class BlackDogArmor extends ArmorItem  {
         super(material, slot, settings);
         damageNegations.add(DamageSource.FALL.name);
     }
-
-
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        LOGGER.info("Hello Fabric world!" + stack.getDamage());
         if (entity instanceof PlayerEntity) {
             PlayerEntity player =  (PlayerEntity) entity;
             if(hasArmorSet(player)){
-
-                LOGGER.info("true");
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,1,3));
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,1,3));
+                if(player.getHealth()<4f){
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION,2,1));
+                }
             }
         }
     }
-
     // 检测去全部装备
     public boolean hasArmorSet(PlayerEntity player) {
         return hasArmorSetItem(player, EquipmentSlot.HEAD) && hasArmorSetItem(player, EquipmentSlot.CHEST) && hasArmorSetItem(player, EquipmentSlot.LEGS) && hasArmorSetItem(player, EquipmentSlot.FEET);
     }
-
     // 检测盔甲装备情况
     public boolean hasArmorSetItem(PlayerEntity player, EquipmentSlot slot) {
         if (player == null || player.getInventory() == null || player.getInventory().armor == null) {
