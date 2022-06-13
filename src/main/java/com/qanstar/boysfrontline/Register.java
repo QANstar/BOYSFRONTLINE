@@ -14,7 +14,7 @@ public class Register {
 
     public static void register() {
         Registry.register(Registry.ITEM,new Identifier("boysfrontline","mod_book"),ModBook);
-        ItemRegister.register();
         BlockRegister.register();
+        ItemRegister.register();
     }
 }

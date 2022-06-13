@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "B B",
+    "   "
+  ],
+  "key": {
+    "B": {
+      "tag": "boysfrontline:black_metal_ingot"
+    }
+  },
+  "result": {
+    "item": "boysfrontline:blackdog_helmet",
+    "count": 1
+  }
+}
