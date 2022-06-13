@@ -1,7 +1,10 @@
 package com.qanstar.boysfrontline.item.Armor.BlackArmor;
 
+import com.qanstar.boysfrontline.item.ItemRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
@@ -10,22 +13,53 @@ import net.minecraft.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class BlackDogArmor extends ArmorItem  {
+import java.util.HashSet;
+import java.util.Set;
 
+public class BlackDogArmor extends ArmorItem  {
+    public static final Logger LOGGER = LoggerFactory.getLogger("boysfrontline");
+    private static final Set<String> damageNegations = new HashSet<>();
     public BlackDogArmor(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
+        damageNegations.add(DamageSource.FALL.name);
     }
-    public static final Logger LOGGER = LoggerFactory.getLogger("boysfrontline");
+
 
     @Override
-    public void inventoryTick(ItemStack stack, World world, Entity player, int slot, boolean selected) {
+    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         LOGGER.info("Hello Fabric world!" + stack.getDamage());
-        if (player instanceof PlayerEntity) {
-            ((PlayerEntity) player).heal(1f);
+        if (entity instanceof PlayerEntity) {
+            PlayerEntity player =  (PlayerEntity) entity;
+            if(hasArmorSet(player)){
+
+                LOGGER.info("true");
+            }
         }
     }
 
-    public void onArmorTick(ItemStack stack, World world, Entity player) {
+    // 检测去全部装备
+    public boolean hasArmorSet(PlayerEntity player) {
+        return hasArmorSetItem(player, EquipmentSlot.HEAD) && hasArmorSetItem(player, EquipmentSlot.CHEST) && hasArmorSetItem(player, EquipmentSlot.LEGS) && hasArmorSetItem(player, EquipmentSlot.FEET);
+    }
+
+    // 检测盔甲装备情况
+    public boolean hasArmorSetItem(PlayerEntity player, EquipmentSlot slot) {
+        if (player == null || player.getInventory() == null || player.getInventory().armor == null) {
+            return false;
+        }
+
+        ItemStack stack = player.getEquippedStack(slot);
+        if (stack.isEmpty()) {
+            return false;
+        }
+
+        return switch (slot) {
+            case HEAD -> stack.isOf(ItemRegister.BLACKDOG_HELMET);
+            case CHEST -> stack.isOf(ItemRegister.BLACKDOG_CHESTPLATE);
+            case LEGS -> stack.isOf(ItemRegister.BLACKDOG_LEGGINGS);
+            case FEET -> stack.isOf(ItemRegister.BLACKDOG_BOOTS);
+            default -> false;
+        };
 
     }
 
