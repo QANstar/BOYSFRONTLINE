@@ -41,7 +41,7 @@ public class BlackArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "black";
+        return "black_dog";
     }
 
     @Override
