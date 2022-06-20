@@ -1,0 +1,37 @@
+{
+  "lovelive_dreamstart": {
+    "sounds": [
+      "boysfrontline:records/lovelive/lovelive_dreamstart"
+    ]
+  },
+  "lovelive_enjoyit": {
+    "sounds": [
+      "boysfrontline:records/lovelive/lovelive_enjoy_it"
+    ]
+  },
+  "lovelive_singsmile": {
+    "sounds": [
+      "boysfrontline:records/lovelive/lovelive_singsmile"
+    ]
+  },
+  "lovelive_colorfuldreams": {
+    "sounds": [
+      "boysfrontline:records/lovelive/lovelive_colorfuldreams"
+    ]
+  },
+  "lovelive_neoskyneomap": {
+    "sounds": [
+      "boysfrontline:records/lovelive/lovelive_neoskyneomap"
+    ]
+  },
+  "lovelive_dreammysun": {
+    "sounds": [
+      "boysfrontline:records/lovelive/lovelive_dreammysun"
+    ]
+  },
+  "lovelive_future": {
+    "sounds": [
+      "boysfrontline:records/lovelive/lovelive_future"
+    ]
+  }
+}

@@ -13,7 +13,7 @@ public class Register {
     // 黑狗战甲
 
     public static void register() {
-        Registry.register(Registry.ITEM,new Identifier("boysfrontline","mod_book"),ModBook);
+        Registry.register(Registry.ITEM,new Identifier(BoysFrontline.modID,"mod_book"),ModBook);
         BlockRegister.register();
         ItemRegister.register();
     }

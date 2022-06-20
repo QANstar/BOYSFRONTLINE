@@ -1,11 +1,26 @@
 {
   "block.boysfrontline.black_metal_ore": "黑金矿",
-
   "item.boysfrontline.black_metal_ingot": "黑金锭",
   "item.boysfrontline.mod_book": "模组手册",
   "itemGroup.boysfrontline.black_group": "黑",
+  "itemGroup.boysfrontline.lovelive_rainbow_group": "虹ヶ咲学園スクールアイドル同好会",
   "item.boysfrontline.blackdog_helmet": "黑狗战甲头盔",
   "item.boysfrontline.blackdog_chestplate": "黑狗战甲胸甲",
   "item.boysfrontline.blackdog_leggings": "黑狗战甲护腿",
-  "item.boysfrontline.blackdog_boots": "黑狗战甲鞋子"
+  "item.boysfrontline.blackdog_boots": "黑狗战甲鞋子",
+  "item.boysfrontline.blackdog_shield":"不灭之黑",
+  "item.boysfrontline.music_disc_dreamstart":"虹ヶ咲学園スクールアイドル同好会 - 夢がここからはじまるよ",
+  "item.boysfrontline.music_disc_dreamstart.desc":"虹ヶ咲学園スクールアイドル同好会 - 夢がここからはじまるよ",
+  "item.boysfrontline.music_disc_enjoyit":"QU4RTZ - ENJOY IT!",
+  "item.boysfrontline.music_disc_enjoyit.desc":"QU4RTZ - ENJOY IT!",
+  "item.boysfrontline.music_disc_singsmile":"QU4RTZ - Sing & Smile!!",
+  "item.boysfrontline.music_disc_singsmile.desc":"QU4RTZ - Sing & Smile!!",
+  "item.boysfrontline.music_disc_colorfuldreamscolorfulsmiles":"虹ヶ咲学園スクールアイドル同好会 - Colorful Dreams! Colorful Smiles!",
+  "item.boysfrontline.music_disc_colorfuldreamscolorfulsmiles.desc":"虹ヶ咲学園スクールアイドル同好会 - Colorful Dreams! Colorful Smiles!",
+  "item.boysfrontline.music_disc_neoskyneomap":"虹ヶ咲学園スクールアイドル同好会 - NEO SKY, NEO MAP!",
+  "item.boysfrontline.music_disc_neoskyneomap.desc":"虹ヶ咲学園スクールアイドル同好会 - NEO SKY, NEO MAP!",
+  "item.boysfrontline.music_disc_dreammysun":"虹ヶ咲学園スクールアイドル同好会 - 夢が僕らの太陽さ",
+  "item.boysfrontline.music_disc_dreammysun.desc":"虹ヶ咲学園スクールアイドル同好会 - 夢が僕らの太陽さ",
+  "item.boysfrontline.music_disc_future":"虹ヶ咲学園スクールアイドル同好会 - 未来ハーモニー",
+  "item.boysfrontline.music_disc_future.desc":"虹ヶ咲学園スクールアイドル同好会 - 未来ハーモニー"
 }
