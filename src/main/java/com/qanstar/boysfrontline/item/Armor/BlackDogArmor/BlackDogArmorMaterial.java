@@ -1,4 +1,4 @@
-package com.qanstar.boysfrontline.item.Armor.BlackArmor;
+package com.qanstar.boysfrontline.item.Armor.BlackDogArmor;
 
 import com.qanstar.boysfrontline.item.ItemRegister;
 import net.minecraft.entity.EquipmentSlot;
@@ -8,12 +8,12 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
-public class BlackArmorMaterial implements ArmorMaterial {
-    private static final int[] BASE_DURABILITY = new int[] {100, 100, 100, 100};
-    private static final int[] PROTECTION_VALUES = new int[] {5, 10, 8, 4};
-    private final float toughness = 10;
-    private final Ingredient repairIngredientSupplier = Ingredient.ofItems(ItemRegister.Black_Metal_Ingot);
-    private final int durabilityMultiplier = 100;
+public class BlackDogArmorMaterial implements ArmorMaterial {
+    private static final int[] BASE_DURABILITY = new int[] {400, 400, 400, 400};
+    private static final int[] PROTECTION_VALUES = new int[] {10, 10, 10, 10};
+    private final float toughness = 20;
+    private final Ingredient repairIngredientSupplier = Ingredient.ofItems(ItemRegister.BLACK_ALLOY);
+    private final int durabilityMultiplier = 200;
 
     @Override
     public int getDurability(EquipmentSlot slot) {
@@ -42,7 +42,7 @@ public class BlackArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "black_armor";
+        return "black_dog";
     }
 
     @Override

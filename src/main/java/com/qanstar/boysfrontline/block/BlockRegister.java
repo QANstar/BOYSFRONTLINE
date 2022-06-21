@@ -20,7 +20,7 @@ public class BlockRegister {
 
       可以在`Blocks`类中查找所有原版方块的统计。
    */
-    public static final Block Black_Metal_Ore=new Block(FabricBlockSettings.of(Material.METAL).hardness(2.0f));
+    public static final Block Black_Metal_Ore=new Block(FabricBlockSettings.of(Material.METAL).hardness(20.0f).requiresTool());
     public static void register() {
         Registry.register(Registry.BLOCK,new Identifier("boysfrontline","black_metal_ore"),Black_Metal_Ore);
         Registry.register(Registry.ITEM,new Identifier("boysfrontline","black_metal_ore"),new BlockItem(Black_Metal_Ore,new Item.Settings().group(BLACK_GROUP)));

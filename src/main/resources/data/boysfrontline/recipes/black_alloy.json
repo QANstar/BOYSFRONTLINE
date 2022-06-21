@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BAB",
+    "ACA",
+    "BAB"
+  ],
+  "key": {
+    "A": {
+      "item": "boysfrontline:black_metal_ingot"
+    },
+    "B": {
+      "item": "minecraft:diamond"
+    },
+    "C": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "boysfrontline:black_alloy",
+    "count": 1
+  }
+}

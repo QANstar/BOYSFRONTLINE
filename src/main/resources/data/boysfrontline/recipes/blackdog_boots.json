@@ -1,11 +1,11 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    { "item": "boysfrontline:black_helmet" },
+    { "item": "boysfrontline:black_boots" },
     { "item": "boysfrontline:black_alloy" }
   ],
   "result": {
-    "item": "boysfrontline:blackdog_helmet",
+    "item": "boysfrontline:blackdog_boots",
     "count": 1
   }
 }

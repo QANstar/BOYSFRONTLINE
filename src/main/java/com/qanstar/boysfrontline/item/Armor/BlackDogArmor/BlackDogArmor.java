@@ -1,4 +1,4 @@
-package com.qanstar.boysfrontline.item.Armor.BlackArmor;
+package com.qanstar.boysfrontline.item.Armor.BlackDogArmor;
 
 import com.qanstar.boysfrontline.item.ItemRegister;
 import net.minecraft.entity.Entity;

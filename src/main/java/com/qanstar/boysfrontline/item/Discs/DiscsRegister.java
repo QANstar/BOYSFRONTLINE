@@ -29,16 +29,16 @@ public class DiscsRegister {
     public static final Item MUSIC_DISC_OTHER_HORSEJUMP = registerDiscOther("music_disc_horsejump", ModSounds.MODSOUND_MUSIC_DISC_HORSEJUMP);
     public static final Item MUSIC_DISC_OTHER_SINCERELY = registerDiscOther("music_disc_sincerely", ModSounds.MODSOUND_MUSIC_DISC_SINCERELY);
     public static Item registerDiscLovelive(String id, SoundEvent sound) {
-        Item.Settings settings = new Item.Settings().rarity(Rarity.COMMON).maxCount(1).group(BoysFrontline.LOVELIVE_GROUP);
-        return Registry.register(Registry.ITEM, new Identifier(BoysFrontline.modID, id), new QANDiscsItem(0, sound, settings));
+        Item.Settings settings = new Item.Settings().rarity(Rarity.UNCOMMON).maxCount(1).group(BoysFrontline.LOVELIVE_GROUP);
+        return Registry.register(Registry.ITEM, new Identifier(BoysFrontline.modID, id), new QANDiscsItem(1, sound, settings));
     }
     public static Item registerDiscKano(String id, SoundEvent sound) {
-        Item.Settings settings = new Item.Settings().rarity(Rarity.COMMON).maxCount(1).group(BoysFrontline.KANO_GROUP);
-        return Registry.register(Registry.ITEM, new Identifier(BoysFrontline.modID, id), new QANDiscsItem(0, sound, settings));
+        Item.Settings settings = new Item.Settings().rarity(Rarity.UNCOMMON).maxCount(1).group(BoysFrontline.KANO_GROUP);
+        return Registry.register(Registry.ITEM, new Identifier(BoysFrontline.modID, id), new QANDiscsItem(1, sound, settings));
     }
     public static Item registerDiscOther(String id, SoundEvent sound) {
-        Item.Settings settings = new Item.Settings().rarity(Rarity.COMMON).maxCount(1).group(BoysFrontline.OTHER_GROUP);
-        return Registry.register(Registry.ITEM, new Identifier(BoysFrontline.modID, id), new QANDiscsItem(0, sound, settings));
+        Item.Settings settings = new Item.Settings().rarity(Rarity.UNCOMMON).maxCount(1).group(BoysFrontline.OTHER_GROUP);
+        return Registry.register(Registry.ITEM, new Identifier(BoysFrontline.modID, id), new QANDiscsItem(1, sound, settings));
     }
     public static void registerDiscs() {}
 

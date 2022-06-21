@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "A A",
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "boysfrontline:black_metal_ingot"
+    }
+  },
+  "result": {
+    "item": "boysfrontline:black_chestplate",
+    "count": 1
+  }
+}

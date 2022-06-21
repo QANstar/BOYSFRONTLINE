@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "boysfrontline:black_metal_ore"
+  },
+  "result": "boysfrontline:black_metal_ingot",
+  "experience": 1,
+  "cookingtime": 200
+}

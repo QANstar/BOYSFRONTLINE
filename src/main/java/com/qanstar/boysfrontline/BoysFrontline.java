@@ -1,11 +1,19 @@
 package com.qanstar.boysfrontline;
 
+import com.qanstar.boysfrontline.block.BlockRegister;
 import com.qanstar.boysfrontline.item.Discs.DiscsRegister;
+import com.qanstar.boysfrontline.item.ItemRegister;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.YOffset;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

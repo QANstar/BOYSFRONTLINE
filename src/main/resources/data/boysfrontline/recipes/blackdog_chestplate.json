@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "boysfrontline:black_chestplate" },
+    { "item": "boysfrontline:black_alloy" },
+    { "item": "boysfrontline:black_power_core" }
+  ],
+  "result": {
+    "item": "boysfrontline:blackdog_chestplate",
+    "count": 1
+  }
+}
