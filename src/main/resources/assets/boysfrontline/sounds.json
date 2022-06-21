@@ -33,5 +33,50 @@
     "sounds": [
       "boysfrontline:records/lovelive/lovelive_future"
     ]
+  },
+  "kano_calc": {
+    "sounds": [
+      "boysfrontline:records/kano/kano_calc"
+    ]
+  },
+  "kano_fanyu": {
+    "sounds": [
+      "boysfrontline:records/kano/kano_fanyu"
+    ]
+  },
+  "kano_glow": {
+    "sounds": [
+      "boysfrontline:records/kano/kano_glow"
+    ]
+  },
+  "kano_heart": {
+    "sounds": [
+      "boysfrontline:records/kano/kano_heart"
+    ]
+  },
+  "kano_stellarium": {
+    "sounds": [
+      "boysfrontline:records/kano/kano_stellarium"
+    ]
+  },
+  "alia": {
+    "sounds": [
+      "boysfrontline:records/other/alia"
+    ]
+  },
+  "divergence": {
+    "sounds": [
+      "boysfrontline:records/other/divergence"
+    ]
+  },
+  "horsejump": {
+    "sounds": [
+      "boysfrontline:records/other/horsejump"
+    ]
+  },
+  "sincerely": {
+    "sounds": [
+      "boysfrontline:records/other/sincerely"
+    ]
   }
 }

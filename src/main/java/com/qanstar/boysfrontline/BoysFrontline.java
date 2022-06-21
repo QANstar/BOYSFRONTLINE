@@ -25,6 +25,16 @@ public class BoysFrontline implements ModInitializer {
 					new Identifier("boysfrontline", "lovelive_rainbow_group"))
 			.icon(() -> new ItemStack(DiscsRegister.MUSIC_DISC_LOVELIVE_DREAMMYSUN)) // 这里将你创建的新的材料的模型用作图标，但是你也可以随时使用你喜欢的
 			.build();
+	// kano组
+	public static final ItemGroup KANO_GROUP = FabricItemGroupBuilder.create(
+					new Identifier("boysfrontline", "kano_group"))
+			.icon(() -> new ItemStack(DiscsRegister.MUSIC_DISC_KANO_CALC)) // 这里将你创建的新的材料的模型用作图标，但是你也可以随时使用你喜欢的
+			.build();
+	// other组
+	public static final ItemGroup OTHER_GROUP = FabricItemGroupBuilder.create(
+					new Identifier("boysfrontline", "other_group"))
+			.icon(() -> new ItemStack(DiscsRegister.MUSIC_DISC_OTHER_SINCERELY)) // 这里将你创建的新的材料的模型用作图标，但是你也可以随时使用你喜欢的
+			.build();
 	@Override
 	public void onInitialize() {
 		Register.register();
