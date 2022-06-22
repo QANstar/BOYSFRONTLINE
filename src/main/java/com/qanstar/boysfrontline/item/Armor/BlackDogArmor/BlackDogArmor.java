@@ -35,7 +35,7 @@ public class BlackDogArmor extends ArmorItem  {
                 player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,1,3));
                 player.addStatusEffect(new StatusEffectInstance(StatusEffects.UNLUCK,1,3));
                 if(player.getHealth()<4f){
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION,2,1));
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION,80,1));
                 }
             }
         }
