@@ -45,7 +45,7 @@ public class BlackDogShield extends ShieldItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,3000,3));
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE,500,0));
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE,1,0));
         return false;
     }
 }
