@@ -27,8 +27,8 @@ public class BlackDogShield extends ShieldItem {
     public void usageTick(World world, LivingEntity user, ItemStack stack, int remainingUseTicks) {
         if (user instanceof PlayerEntity) {
             PlayerEntity player =  (PlayerEntity) user;
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,1,4));
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,1,4));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,1,3));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE,1,3));
 //            world.addParticle(ParticleTypes.EXPLOSION,player.getX(),player.getY(),player.getZ(),0,5f,0 );
 //            double particleR = player.getHeight()/2;
 //            world.addParticle(ParticleTypes.DRAGON_BREATH,player.getX()+particleR,player.getY(),player.getZ(),0,0.5f,0 );
